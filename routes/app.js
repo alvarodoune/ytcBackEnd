@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'YTC Backend' });
+});
+
+/* GET users page. */
+router.get('/users', function(req, res, next) {
+    res.render('users', { message: 'Usuarios' });
 });
 
 module.exports = router;
